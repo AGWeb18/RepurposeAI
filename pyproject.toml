@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "repurposeai"
+version = "0.1.0"
+description = "FastAPI service for RepurposeAI content repurposing"
+authors = ["RepurposeAI Team <founders@repurpose.ai>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+pydantic = "^2.7.0"
+uvicorn = "^0.29.0"
+python-multipart = "^0.0.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.0"
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core>=1.7.0"]
+build-backend = "poetry.core.masonry.api"
